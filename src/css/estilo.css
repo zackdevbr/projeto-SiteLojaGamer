@@ -125,6 +125,7 @@ header nav ul li a:hover{
 /* GRID DOS CARDS */
 .card{
     display: grid;
+    margin-bottom: 120px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
     gap: 100px;
     justify-content: center;
@@ -397,11 +398,9 @@ header nav ul li a:hover{
 
 .contato-grid{
     display: grid;
-
+    margin-bottom: 120px;
     grid-template-columns: 1fr 1fr;
-
     gap: 50px;
-
     margin-top: 80px;
 }
 
