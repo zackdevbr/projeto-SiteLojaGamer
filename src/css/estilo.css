@@ -133,7 +133,7 @@ header nav ul li a:hover{
 /* CARD */
 .produto-card{
     background: var(--background2); 
-    border: 2px solid var(--vermelhoNeon);
+    border: 2px solid var(--roxoNeon);
     border-radius: 15px;
     padding: 20px;
     text-align: center;
@@ -147,7 +147,7 @@ header nav ul li a:hover{
 
 .produto-card:hover{
     transform: translateY(-10px);
-    border-color: var(--roxoNeon);
+    border-color: var(--rosaNeon);
     box-shadow: 0 10px 25px rgba(224, 24, 247, 0.851);
 }
 
