@@ -73,7 +73,7 @@ header nav ul li a:hover{
     text-align:center;
     margin-top:100px;
     text-transform:uppercase;
-    background:var(--textoPrincipal);
+    background:var(--roxoNeon);
     -webkit-text-fill-color:transparent;
     background-clip:text;
 }
@@ -82,7 +82,125 @@ header nav ul li a:hover{
     text-align:center;
     margin-top:100px;
     text-transform:uppercase;
-    background:var(--textoSecundario);
+    background:var(--vermelhoNeon);
     -webkit-text-fill-color:transparent;
     background-clip:text;
+}
+/* CONTAINER */
+#container{
+    padding: 20px 8%;
+}
+
+
+/* GRID DOS CARDS */
+.card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+    gap: 100px;
+    justify-content: center;
+}
+
+/* CARD */
+.produto-card{
+    background: var(--background2); 
+    border: 2px solid var(--vermelhoNeon);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: 0.3s ease;
+}
+
+.produto-card:hover{
+    transform: translateY(-10px);
+    border-color: var(--roxoNeon);
+    box-shadow: 0 10px 25px rgba(224, 24, 247, 0.851);
+}
+
+/* IMAGEM */
+.produto-card img{
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background: var(--background2);
+    border-radius: 10px;
+}
+
+/* CONTEÚDO */
+.card-content{
+    padding: 20px 0 0;
+    color: var(--roxoNeon);
+}
+
+/* NOME DO PRODUTO */
+.card-content h3{
+    min-height: 90px;
+    font-size: 1.1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* PREÇO */
+.preco-antigo {
+    font-size:1rem;
+    color: var(--vermelhoNeon);
+    margin-bottom: 8px;
+    font-family:Montserrat, sans-serif;
+}
+.preco-antigo span{
+    padding:5px;
+    font-size:0.8rem;
+    text-decoration:line-through;
+    text-decoration-color: var(--verdeNeon);
+}
+
+.preco {
+    font-size: 1.2rem;
+    color: var(--verdeNeon);
+    margin: 15px 0;
+}
+.preco span{
+    padding:5px;
+    font-size:1.2rem;
+    color: var(--textoPrincipal);
+}
+/* BOTÃO */
+.btn-comprar{
+    background: var(--roxoNeon);
+    color: var(--background);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.btn-comprar:hover{
+    background: var(--vermelhoNeon);
+    color: var(--background);
+    transform: scale(1.05);
+}
+#imgfundo{
+    position: fixed;
+
+    bottom: -180px;
+    right: 175px;
+
+    width: 600px;
+
+    opacity: 0.15;
+
+    filter: blur(1px);
+
+    z-index: -1;
+
+    pointer-events:none;
 }
