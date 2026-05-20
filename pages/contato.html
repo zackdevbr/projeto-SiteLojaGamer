@@ -20,6 +20,147 @@
             </ul>
         </nav>
     </header>
+
+    <main>
+
+        <div id="container">
+
+            <div class="contato-grid">
+
+
+                <div class="contato-info">
+
+                    <h3>Informações</h3>
+
+                    <div class="info-item">
+
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>
+                                Av. Gamer Arena, 777<br>
+                                São Paulo - SP
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="info-item">
+
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>
+                                (11) 99999-9999
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="info-item">
+
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>
+                                contato@rainbowgames.com
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="info-item">
+
+                        <div>
+                            <h4>Funcionamento</h4>
+                            <p>
+                                Segunda à Sexta: 9h às 20h<br>
+                                Sábado: 10h às 18h
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="contato-extra">
+
+                        <h4>Power Your Game.</h4>
+
+                        <p>
+                            Nossa equipe está pronta para ajudar você
+                            a montar o setup gamer ideal.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contato-form-container">
+
+                    <h3>Envie uma Mensagem</h3>
+
+                    <form id="form-contato" onsubmit="enviarFormulario(event)">
+
+                        <div class="form-group">
+
+                            <label for="nome">Seu Nome</label>
+
+                            <input 
+                            type="text"
+                            id="nome"
+                            placeholder="Digite seu nome"
+                            required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="email">E-mail</label>
+
+                            <input 
+                            type="email"
+                            id="email"
+                            placeholder="Digite seu e-mail"
+                            required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="telefone">Telefone</label>
+
+                            <input 
+                            type="tel"
+                            id="telefone"
+                            placeholder="(11) 99999-9999">
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="mensagem">Mensagem</label>
+
+                            <textarea 
+                            id="mensagem"
+                            placeholder="Digite sua mensagem"
+                            required></textarea>
+
+                        </div>
+
+                        <button type="submit" class="btn-enviar">
+                            Enviar Mensagem
+                        </button>
+
+                    </form>
+
+                    <div class="mensagem-sucesso" id="mensagem-sucesso">
+                        ✓ Mensagem enviada com sucesso!
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
     
     <script src="../src/js/script.js"></script>
 </body>
