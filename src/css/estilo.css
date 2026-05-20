@@ -588,3 +588,126 @@ header nav ul li a:hover{
 
     font-weight: bold;
 }
+
+/* Página Portifólio */
+
+/* SUBTÍTULO */
+
+
+.subtitulo-secao{
+    color: var(--textoSecundario);
+
+    margin-bottom: 50px;
+
+    font-size: 1.1rem;
+}
+
+
+/* SERVIÇOS */
+
+.servicos-section{
+    margin-top: 120px;
+}
+
+.servicos-grid{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+
+    gap: 30px;
+}
+
+.servico-card{
+    background: var(--background2);
+
+    border: 2px solid rgba(168,85,247,0.2);
+
+    border-radius: 20px;
+
+    padding: 40px 30px;
+
+    transition: 0.3s ease;
+
+    text-align: center;
+}
+
+.servico-card:hover{
+    transform: translateY(-10px);
+
+    border-color: var(--azulNeon);
+
+    box-shadow: 0 0 25px rgba(0,217,255,0.2);
+}
+
+.servico-card h3{
+    color: var(--textoPrincipal);
+
+    margin-bottom: 20px;
+}
+
+.servico-card p{
+    color: var(--textoSecundario);
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+.servico-preco{
+    color: var(--verdeNeon);
+
+    font-weight: bold;
+}
+
+/* TABELA */
+
+.tabela-precos{
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+
+table{
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 40px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: var(--background2);
+}
+
+thead{
+    background: rgba(168,85,247,0.15);
+}
+
+th{
+    color: var(--textoPrincipal);
+
+    padding: 20px;
+
+    text-align: left;
+}
+
+td{
+    padding: 20px;
+
+    color: var(--textoSecundario);
+
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+tr:hover{
+    background: rgba(255,255,255,0.03);
+}
+
+.promo{
+    color: var(--verdeNeon);
+
+    font-weight: bold;
+}
