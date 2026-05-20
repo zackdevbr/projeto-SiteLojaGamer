@@ -1,0 +1,88 @@
+:root{
+    --background: #0A0A0A;
+    --background2: #121212;
+    --cardColor: #1A1A1A;
+    --textoPrincipal: #FFFFFF;
+    --textoSecundario: #B3B3B3;
+    --azulNeon: #00D9FF;
+    --roxoNeon: #A855F7;
+    --rosaNeon: #FF2D95;
+    --verdeNeon: #00FF88;
+    --vermelhoNeon: #FF3B3B;
+    --rgb: linear-gradient(90deg, #00D9FF, #A855F7, #FF2D95);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    background: var(--background);
+    font-family: var(--fontFamily); 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex: 1;
+}
+p{
+    font-size:1.5rem;
+    color:var(--textoPrincipal);
+    
+}
+
+header{
+    background:var(--background2);
+    color:var(--roxoNeon);
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow: 0 5px 5px var(--roxoNeon);
+    border-radius: 0px;
+}
+header #logo{
+    width:150px;
+    height:150px;
+    border-radius:0px;
+    background: transparent;
+}
+header nav ul{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+header nav ul li a{
+    text-decoration:none;
+    color:var(--roxoNeon);
+    font-weight:800;
+}
+header nav ul li a:hover{
+    color:var(--rosaNeon);
+}
+
+.cor{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background:var(--background2);
+}
+#texto {
+    font-size:3rem;
+    text-align:center;
+    margin-top:100px;
+    text-transform:uppercase;
+    background:var(--textoPrincipal);
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+}
+#texto span{
+    font-size:3rem;
+    text-align:center;
+    margin-top:100px;
+    text-transform:uppercase;
+    background:var(--textoSecundario);
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+}
