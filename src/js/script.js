@@ -10,3 +10,15 @@ document.addEventListener('DOMContentLoaded', ()=>{
         }
     }
 })
+
+window.onload = function(){
+    const intro = document.getElementById("inicio");
+    const content = document.getElementById("content");
+    setTimeout(()=>{
+        intro.classList.add("efeito-out");
+        setTimeout(()=>{
+            intro.style.display = "none";
+            content.classList.remove("hidden");
+        },1000);
+    },3000);
+}
